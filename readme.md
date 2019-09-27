@@ -1,8 +1,8 @@
 # Introduction 
 Welcome to Azure Terraform Blueprints.
-Using this serie of blueprints based on Terraform, you will be able to deploy easily a complex environment based on virtual datacenter and cloud adoption framrwork concepts. <br/>
-We designed this serie of blueprints to offer a modular and highly specialized approach, each blueprint adding a layer of features and the associated security, just by customizing a set of variables.
+Using this series of blueprints based on Terraform, you will be able to deploy easily a complex environment based on virtual datacenter and cloud adoption framework concepts.
 
+We designed this series of blueprints to offer a modular and highly specialized approach, each blueprint adding a layer of features and the associated security, just by customizing a set of variables.
 
 # Getting Started
 The fastest way to get started is to leverage Azure Cloud Shell:
@@ -18,6 +18,7 @@ git clone https://github.com/aztfmod/blueprints.git
 ``` 
 5. Initialize the environment - this will create the fundamentals for the Terraform state, like Storage Account, Azure Key Vault, and the managed identities.
 ```
+cd blueprints
 ./launchpad.sh 
 ```
 
