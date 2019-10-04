@@ -25,15 +25,15 @@ cd blueprints
 6. Deploy your first tranquility blueprint 
 
 ```
-./launchpad.sh blueprint_tranquility plan
+./launchpad.sh landingzone_vdc_level1 plan
 ```
 Review the configuration and if you are ok with it, deploy it by running: 
 ```
-./launchpad.sh blueprint_tranquility apply
+./launchpad.sh landingzone_vdc_level1 apply
 ```
 Have fun playing with the blueprint an once you are done, you can simply delete the deployement using: 
 ```
-./launchpad.sh blueprint_tranquility destroy
+./launchpad.sh landingzone_vdc_level1 destroy
 ```
 The foundations will remain on your subscription so next run, you can jump to step 6 directly. 
 More details about tranquility can be found in the blueprint folder ./blueprint_tranquility
