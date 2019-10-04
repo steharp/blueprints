@@ -22,7 +22,7 @@ cd blueprints
 ./launchpad.sh 
 ```
 
-6. Deploy your first tranquility blueprint 
+6. Deploy your first landing zone (vdc_level1) 
 
 ```
 ./launchpad.sh landingzone_vdc_level1 plan
@@ -31,12 +31,12 @@ Review the configuration and if you are ok with it, deploy it by running:
 ```
 ./launchpad.sh landingzone_vdc_level1 apply
 ```
-Have fun playing with the blueprint an once you are done, you can simply delete the deployement using: 
+Have fun playing with the landing zone an once you are done, you can simply delete the deployement using: 
 ```
 ./launchpad.sh landingzone_vdc_level1 destroy
 ```
 The foundations will remain on your subscription so next run, you can jump to step 6 directly. 
-More details about tranquility can be found in the blueprint folder ./blueprint_tranquility
+More details about the landing zone can be found in the landing zone folder ./landingzone_vdc_level1 
 
 <br/>
 
