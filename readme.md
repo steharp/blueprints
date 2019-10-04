@@ -1,6 +1,6 @@
 # Introduction 
-Welcome to Azure Terraform Blueprints.
-Using this series of blueprints based on Terraform, you will be able to deploy easily a complex environment based on virtual datacenter and cloud adoption framework concepts.
+Welcome to Azure Terraform Landing Zone samples.
+Using this series of landing zones and blueprints based on Terraform, you will be able to deploy easily a complex environment based on virtual datacenter and cloud adoption framework concepts.
 
 We designed this series of blueprints to offer a modular and highly specialized approach, each blueprint adding a layer of features and the associated security, just by customizing a set of variables.
 
