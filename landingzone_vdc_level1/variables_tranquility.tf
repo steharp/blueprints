@@ -1,10 +1,5 @@
-
-variable "prefix" {
-  
-}
-
 variable "resource_groups_hub" {
-
+  description = "(Required) Contains the resource groups object to be created for vdc_level1"
 }
 
 # Example:
@@ -28,7 +23,7 @@ variable "resource_groups_hub" {
 # }
 
 variable "location_map" {
-  description = "Default location to create the resources"
+  description = "(Required) Default location to create the resources"
   type        = map(string)
 }
 
@@ -39,7 +34,7 @@ variable "location_map" {
 # }
 
 variable "security_center" {
-  description = "Attributes: [contact_email,contact_phone]"
+  description = "(Required) Attributes: [contact_email,contact_phone]"
   type        = map(string)
 }
 
@@ -50,24 +45,25 @@ variable "security_center" {
 # }
 
 variable "analytics_workspace_name" {
+  description = "(Required) Name for the log analytics workspace"
   default = ""
 }
 
 variable "tags_hub" {
-  description = "map of the tags to be applied"
+  description = "(Required) Map of the tags to be applied"
   type    = map(string)
 }
 
 variable "azure_activity_logs_retention" {
-    description = "Retention period to keep the Azure Activity Logs in the Azure Storage Account"
+  description = "(Required) Retention period to keep the Azure Activity Logs in the Azure Storage Account"
 }
 
 variable "solution_plan_map" {
-  description = "map structure with the list of log analytics solutions to be deployed"
+  description = "(Required) Map structure with the list of log analytics solutions to be deployed"
 }
 
 variable "azure_diagnostics_logs_retention" {
-  description = "Retention period to keep the diagnostics Logs in the Azure Storage Account"
+  description = "(Required) Retention period to keep the diagnostics Logs in the Azure Storage Account"
 }
 
 variable "provision_rbac" {

@@ -1,6 +1,7 @@
-# Blueprint: tranquility
-Blueprint_tranquility is the first blueprint to deploy as Terraform Azure Landing Zone. <br/>
-It's job is to provide with the foundations of security and auditing for an Azure deployment with come customization capabilities. After running, tranquility exports to the shared TF state a set of output variables thast will be reused in subsequent blueprints.  
+# Blueprint blueprint_tranquility
+Blueprint_tranquility is the first blueprint to deploy. <br/>
+It's job is to provide with the foundations of security and auditing for an Azure deployment with come customization capabilities. <br/>
+After running, tranquility exports to the shared TF state a set of output variables thast will be reused in subsequent blueprints.  
 
 ## Getting Started
 As an example of configuration, use the foundations.auto.tfvars provided in the repository. 
@@ -9,10 +10,9 @@ As an example of configuration, use the foundations.auto.tfvars provided in the 
 ```
 ./launchpad.sh blueprint_tranquility apply
 ```
+## Components
 
-## Architecture components
 ![tranquility diagram](https://raw.githubusercontent.com/aztfmod/blueprints/master/blueprint_tranquility/tranquility.png "tranquility diagram")
-
 
 ## Capabilities
 
@@ -43,9 +43,7 @@ As an example of configuration, use the foundations.auto.tfvars provided in the 
 The provided foundations.auto.tfvars allows you to deploy your first version of blueprint_tranquility and see the typical options
 
 ## Foundations
-Please do not modify the provided output variables but add additionnal below if you need to extend the model.
+The output of blueprint_tranquility will be stored in Azure Storage Account and will be read by subsequent modules. <br/> Please do not modify the provided output variables but add additionnal below if you need to extend the model.
 
-
-
-## Contribute
+# Contribute
 Pull requests are welcome to evolve the framework and integrate new features!
