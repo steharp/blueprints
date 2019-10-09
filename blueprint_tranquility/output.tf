@@ -23,8 +23,8 @@ output "resource_group_hub_names" {
 #log analytics workspace
 output "log_analytics_workspace" {
     value = {
-        "name"    = module.log_analytics.log_analytics_workspace_name, 
-        "id"      = module.log_analytics.log_analytics_workspace_id
+        "name"    = module.log_analytics.name, 
+        "id"      = module.log_analytics.id
     }
 }
 
@@ -38,4 +38,13 @@ output "location_map" {
 output "tags_hub" {
   value = var.tags_hub
 }
+
+output "tags" {
+  value = var.tags_hub
+}
+
+output "prefix" {
+  value = var.prefix
+}
+
 

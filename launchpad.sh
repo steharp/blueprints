@@ -47,6 +47,7 @@ function initialize_from_remote_state {
         terraform init \
                 -backend=true \
                 -reconfigure=true \
+                -upgrade=true \
                 -backend-config storage_account_name=${storage_account_name} \
                 -backend-config container_name=${container} \
                 -backend-config access_key=${access_key} \
@@ -62,6 +63,7 @@ function initialize_from_remote_state {
 function plan {
         echo "running terraform plan with $tf_command"
         terraform plan $tf_command \
+                -refresh=true \
                 -out=${blueprint_name}.tfplan
 }
 

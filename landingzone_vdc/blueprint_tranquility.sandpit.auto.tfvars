@@ -1,4 +1,7 @@
-# SAMPLE FILE FOR TRANQUILITY BLUEPRINT
+# SAMPLE FILE FOR TRANQUILITY LANDING ZONE
+
+# Creates the default RBAC model 
+# provision_rbac = false
 
 # Azure Subscription activity logs retention period
 azure_activity_logs_retention = 365
@@ -8,12 +11,14 @@ azure_diagnostics_logs_retention = 60
 
 # Set of resource groupds to land the blueprint
 resource_groups_hub = {
-    HUB-CORE-NET    = "-hub-core-net"
-    HUB-CORE-SEC    = "-hub-core-sec"
-    HUB-EDGE-NET    = "-hub-egress-net"
-    HUB-INGRESS-NET = "-hub-ingress-net"
-    HUB-TRANSIT-NET = "-hub-transit-net"
-    HUB-OPERATIONS  = "-hub-operations"
+    HUB-CORE-SEC    = {
+        name = "-hub-core-sec"
+        location = "southeastasia"
+    }
+    HUB-OPERATIONS  = {
+        name = "-hub-operations"
+        location = "southeastasia"
+    }
 }
 
 #Primary location picked is region1, region2 is picked as backup whenever applicable
@@ -30,7 +35,7 @@ tags_hub = {
     costCenter      = "1664"
     BusinessUnit    = "SHARED"
     DR              = "NON-DR-ENABLED"
-  }
+}
 
 #Logging and monitoring 
 analytics_workspace_name = "lalogs"
